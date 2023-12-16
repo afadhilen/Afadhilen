@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+}
