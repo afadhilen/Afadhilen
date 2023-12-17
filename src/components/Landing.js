@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { motion } from 'framer-motion'
 
 function Landing() {
   const [text] = useTypewriter({
@@ -8,7 +9,16 @@ function Landing() {
   })
   return (
     <>
-      <div className="flex justify-center items-center">
+      <motion.div
+        className="flex justify-center items-center"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}>
         <div className="landing-left w-1/2">
           <div className="avatar">
             <div className="w-64 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -59,29 +69,25 @@ function Landing() {
         </div>
         <div className="landing-right w-1/2">
           <div className="stats stats-vertical shadow">
-            {/* <div className="stat">
-              <div className="stat-value">
-                <a className="link link-hover">Home</a>
-              </div>
-            </div> */}
             <div className="stat">
               <div className="stat-value">
-                <a className="link link-hover">Profile</a>
+                <a className="link link-hover" href="/profile">
+                  Profile
+                </a>
               </div>
             </div>
             <div className="stat">
               <div className="stat-value">
-                <a className="link link-hover">Skills</a>
+                <a className="link link-hover" href="/education">
+                  Education & Experience
+                </a>
               </div>
             </div>
             <div className="stat">
               <div className="stat-value">
-                <a className="link link-hover">Education</a>
-              </div>
-            </div>
-            <div className="stat">
-              <div className="stat-value">
-                <a className="link link-hover">Portofolio</a>
+                <a className="link link-hover" href="/porto">
+                  Portofolio
+                </a>
               </div>
             </div>
             <div className="stat">
@@ -91,7 +97,7 @@ function Landing() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

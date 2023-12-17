@@ -13,3 +13,39 @@
   display: flex;
   flex: 1;
 }
+
+.menu-center {
+  margin-top: 300px;
+}
+
+.menu-center ul > li {
+  margin-top: 10px;
+}
+
+.nav {
+  width: 100px;
+}
+
+.nav-content {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.nav-item:hover .svg {
+  display: none;
+}
+
+.nav-item:hover .nav-text {
+  display: inline;
+}
+
+.nav-text {
+  display: none;
+}
+
+.full-height-section {
+  min-height: 100vh;
+}
+
+.section-1 {
+  padding: 15%;
+}
