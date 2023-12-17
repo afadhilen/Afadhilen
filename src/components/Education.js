@@ -217,7 +217,7 @@ function Education() {
               </div>
               <div className="timeline-start mb-10 text-left">
                 <time className="font-mono italic">2022 - Present</time>
-                <div className="text-lg font-black">Self Projects</div>
+                <div className="text-lg font-black">Team Project</div>
                 Front-End Developer
               </div>
               <hr />
