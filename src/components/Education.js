@@ -41,9 +41,9 @@ function Education() {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}>
-      <div className="full-height-section section-1" id="education">
+      <div className="full-height-section grid justify-items-center" id="education">
         <div className="text-5xl grid place-items-center mb-6">Education</div>
-        <div className="w-3/4">
+        <div className="edu">
           <ul className="timeline">
             <li>
               <div className="timeline-start">
@@ -179,7 +179,7 @@ function Education() {
                   />
                 </svg>
               </div>
-              <div className="timeline-start md:text-end mb-10">
+              <div className="timeline-start md:text-end mb-10 text-left">
                 <time className="font-mono italic">2021</time>
                 <div className="text-lg font-black">Lecturer at Politeknik Kesehatan Jambi</div>
                 Sistem Informasi Lab & Database, Graphic Design (Web Design)

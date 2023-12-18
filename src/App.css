@@ -9,7 +9,7 @@
   min-height: 100vh;
 }
 
-.flex {
+.flex-div {
   display: flex;
   flex: 1;
 }
@@ -44,8 +44,4 @@
 
 .full-height-section {
   min-height: 100vh;
-}
-
-.section-1 {
-  padding: 15%;
 }
