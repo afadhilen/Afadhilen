@@ -24,15 +24,15 @@ const portoData = [
     type: 2,
   },
   {
-    title: 'Search Movie Web App',
+    title: 'Searchvie - Search Movie',
     desc: 'Embark on a cinematic journey with my Movie Search App, a beautifully crafted web application powered by ReactJS and DaisyUI. This dynamic platform seamlessly integrates with the IMDb API, bringing the vast world of movies to your fingertips.',
     img: '/porto/porto1.png',
     url: 'https://searchvie.vercel.app/',
     type: 2,
   },
   {
-    title: 'Memoaraku - A Template Instagram Gallery Web App',
-    desc: 'Introducing the Leonardo AI Photo Gallery App, where artistry meets technology to create stunning visual experiences. Powered by the cutting-edge Leonardo AI, this app transforms ordinary photos into captivating works of art.',
+    title: 'Memoaraku - Instagram Gallery',
+    desc: 'An innovative gallery web app powered by ReactJS and seamlessly integrated with the Instagram API. Immerse yourself in a world of captivating images, dynamic data, and a user experience tailored to elevate your visual exploration.',
     img: '/porto/porto2.png',
     url: 'https://memoaraku.vercel.app/',
     type: 2,
