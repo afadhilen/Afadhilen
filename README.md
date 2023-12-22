@@ -1,2 +1,2 @@
-# This is me: afadhilen.site
+# This is me: https://afadhilen.site/ or https://afadhilen.vercel.app/
 
