@@ -14,24 +14,56 @@ function Portofolio() {
       }}>
       <div className="text-4xl">My Recent Works</div>
       <p className="text-xs">Here are a few projects/publications I've worked on recently</p>
-      <div className="grid grid-cols-3 gap-6 mt-10">
+      <div className="divider"></div>
+      <h2 className="text-2xl">Writing</h2>
+      <div className="grid grid-cols-2 gap-6 mt-10">
         {portoData.map((porto, index) => (
           <div
             className="card card-compact w-96 shadow-xl hover:scale-105 transition-transform duration-300"
             key={index}>
-            <figure>
-              <img src={porto.img} style={{ width: '384px', height: '240px' }} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title justify-center">{porto.title}</h2>
-              <p className="text-justify">{porto.desc}</p>
-              <div className="card-actions justify-end">
-                <a href={porto.url} target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary">Visit</button>
-                </a>
-              </div>
-            </div>
+            {porto.type == 1 && (
+              <>
+                <figure>
+                  <img src={porto.img} style={{ width: '384px', height: '240px' }} alt="academic" />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title justify-center">{porto.title}</h2>
+                  <p className="text-justify">{porto.desc}</p>
+                  <div className="card-actions justify-end">
+                    <a href={porto.url} target="_blank" rel="noopener noreferrer">
+                      <button className="btn btn-primary">Visit</button>
+                    </a>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
+        ))}
+      </div>
+      <div className="divider"></div>
+      <h2 className="text-2xl">Web Development</h2>
+      <div className="grid grid-cols-3 gap-6 mt-10 justify-center">
+        {portoData.map((porto, index) => (
+          <>
+            {porto.type == 2 && (
+              <div
+                className="card card-compact w-96 shadow-xl hover:scale-105 transition-transform duration-300"
+                key={index}>
+                <figure>
+                  <img src={porto.img} style={{ width: '384px', height: '240px' }} alt="web" />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title justify-center">{porto.title}</h2>
+                  <p className="text-justify">{porto.desc}</p>
+                  <div className="card-actions justify-end">
+                    <a href={porto.url} target="_blank" rel="noopener noreferrer">
+                      <button className="btn btn-primary">Visit</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
+          </>
         ))}
       </div>
     </motion.div>

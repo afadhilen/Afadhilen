@@ -32,7 +32,7 @@ function Education() {
   }
   return (
     <motion.div
-      className="flex flex-col justify-center items-center"
+      className="flex flex-div flex-col justify-center items-center"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 1 }}
